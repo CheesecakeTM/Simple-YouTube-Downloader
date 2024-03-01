@@ -1,8 +1,8 @@
 from customtkinter import *
 from pytube import YouTube
-from pathlib import Path
+import os
 
-DOWNLOADS_FOLDER_PATH = Path.home() / "Downloads"
+DOWNLOADS_FOLDER_PATH = os.path.expanduser('~/Downloads')
 
 
 def download():
@@ -34,7 +34,7 @@ set_default_color_theme("blue")
 app = CTk()
 app.geometry("360x240")
 app.title("Youtube Downloader")
-app.iconbitmap(".images/yt-downloader.ico")
+app.iconbitmap("icon.ico")
 
 # Title label
 title = CTkLabel(app, text="Simple Youtube Downloader", font=("Outfit", 24))
@@ -60,7 +60,6 @@ percentage.pack()
 progressbar = CTkProgressBar(app, width=300)
 progressbar.set(0)
 progressbar.pack(padx=10, pady=10)
-
 
 # Run app
 app.mainloop()
