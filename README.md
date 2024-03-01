@@ -8,6 +8,4 @@
 - cooler UX/UI
 
 ## Why this project?
-I wanted to learn Python for some time and this is my <br>
-first project. Building something you'll use or other <br>
-people will use is rewarding ^-^
+I wanted to learn Python for some time and this is my first project. Creating something you'll use or other people will use is rewarding ^-^
