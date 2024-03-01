@@ -11,7 +11,7 @@ def download():
         yt = YouTube(yt_link, on_progress_callback=on_progress)
         finished_label.configure(text="")
         yt.streams.get_highest_resolution().download(str(DOWNLOADS_FOLDER_PATH))
-        finished_label.configure(text="Downloaded!", text_color="green")
+        finished_label.configure(text="Video downloaded! (look in the downloads folder)", text_color="green")
     except Exception as e:
         finished_label.configure(text=f"An error occurred: {e}", text_color="red")
 
