@@ -1,6 +1,6 @@
 # Simple Youtube Downloader
 
-![](.images/Screenshot.png "Preview of the app, as of now")
+![](.images/Screenshot2.png "Preview of the app, as of now")
 
 ## Things I want to add
 - drop-down menu to choose between 'audio' and 'video'
