@@ -34,6 +34,7 @@ set_default_color_theme("blue")
 app = CTk()
 app.geometry("360x240")
 app.title("Youtube Downloader")
+app.iconbitmap(".images/yt-downloader.ico")
 
 # Title label
 title = CTkLabel(app, text="Simple Youtube Downloader", font=("Outfit", 24))
