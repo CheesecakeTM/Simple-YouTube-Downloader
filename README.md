@@ -2,7 +2,7 @@
 
 ![](.images/Screenshot2.png "Preview of the app, as of now")
 
-This project/app is NOT meat to be used with fraudolent intent!
+This project/app is NOT meant to be used with fraudulent intent!
 
 ## Things I want to add
 - drop-down menu to choose between 'audio' and 'video'
