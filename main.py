@@ -7,6 +7,8 @@ DW_CHOICE = "Video"
 
 
 def download():
+    """ Download function."""
+
     yt_link = link.get()
     yt = YouTube(yt_link, on_progress_callback=on_progress)
     finished_label.configure(text="")
@@ -25,6 +27,8 @@ def download():
 
 
 def on_progress(stream, chunk, bytes_remaining):
+    """ Progress bar and percentage update function."""
+
     total_size = stream.filesize
     bytes_downloaded = total_size - bytes_remaining
     percentage_of_completion = bytes_downloaded / total_size * 100
@@ -35,6 +39,8 @@ def on_progress(stream, chunk, bytes_remaining):
 
 
 def combobox_callback(choice):
+    """ Choice between video and audio."""
+
     global DW_CHOICE
     DW_CHOICE = choice
 
